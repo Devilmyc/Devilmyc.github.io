@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+<html lang="en" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>流程控制语句分支和跳转 - 147DD</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="分支和跳转ifswitchgoto
+if语句12345678910111213141516171819202122232425262728293031323334353637383940414243,"> 
+    <meta name="author" content="147DD"> 
+    <link rel="alternative" href="atom.xml" title="147DD" type="application/atom+xml"> 
+    <link rel="icon" href="A:\Hexo\themes\diaspora\source\img type="image/x-icon"> 
+    
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+	<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+    <script>
+         (adsbygoogle = window.adsbygoogle || []).push({
+              google_ad_client: "ca-pub-8691406134231910",
+              enable_page_level_ads: true
+         });
+    </script>
+    <script async custom-element="amp-auto-ads"
+        src="https://cdn.ampproject.org/v0/amp-auto-ads-0.1.js">
+    </script>
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">147DD</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="http://yoursite.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">流程控制语句分支和跳转</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">流程控制语句分支和跳转</h1>
+        <div class="stuff">
+            <span>六月 05, 2020</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/c%E8%AF%AD%E8%A8%80/" rel="tag">c语言</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h2 id="分支和跳转"><a href="#分支和跳转" class="headerlink" title="分支和跳转"></a>分支和跳转</h2><p>if<br>switch<br>goto</p>
+<h3 id="if语句"><a href="#if语句" class="headerlink" title="if语句"></a>if语句</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br></pre></td><td class="code"><pre><span class="line">int flag&#x3D;5;</span><br><span class="line">int num &#x3D;0;</span><br><span class="line">scanf(&quot;%d&quot;,&amp;num);</span><br><span class="line">if(flag &#x3D;&#x3D; num)&#123;</span><br><span class="line">    printf(&quot;flag等于num&quot;);</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    printf(&quot;falg!&#x3D;num&quot;);</span><br><span class="line">&#125;</span><br><span class="line">&#x2F;&#x2F;如果输入的num和flag相等就进入到if的代码块中，不相等就进入else的代码块</span><br><span class="line">*****</span><br><span class="line">if(num &#x3D;&#x3D; 1)&#123;</span><br><span class="line">    printf(&quot;num&#x3D;1&quot;);</span><br><span class="line">&#125;else if(num &#x3D;&#x3D;2)&#123;</span><br><span class="line">    printf(&quot;num &#x3D;2&quot;);</span><br><span class="line">&#125;else&#123;</span><br><span class="line">    printf(&quot;num不等于1也不等于2&quot;);</span><br><span class="line">&#125;</span><br><span class="line">*****</span><br><span class="line">int flag &#x3D;5;</span><br><span class="line">int num &#x3D;0;</span><br><span class="line">printf(&quot;请输入一个数字：&quot;);</span><br><span class="line">scanf(&quot;%d,%d&quot;,&amp;num,&amp;flag);</span><br><span class="line">if(num &#x3D;&#x3D;1)&#123;</span><br><span class="line">    printf(&quot;num &#x3D;1&quot;);</span><br><span class="line">    if(flag &#x3D;&#x3D; 2)&#123;</span><br><span class="line">        printf(&quot;num &#x3D;&#x3D;1 &amp;&amp;  flag &#x3D;&#x3D;2&quot;);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">*******</span><br><span class="line">char a;</span><br><span class="line">a &#x3D; getchar();&#x2F;&#x2F;获取a的值相当于scanf</span><br><span class="line">putchar(a);&#x2F;&#x2F;打印a的值</span><br><span class="line">*****</span><br><span class="line">#include &lt;ctype.h&gt;&#x2F;&#x2F;函数库 判断参数是字符还是数字</span><br><span class="line">char a;</span><br><span class="line">a &#x3D; getchar();</span><br><span class="line">int flag &#x3D;isalpha(a);&#x2F;&#x2F;isalpha如果是字母返回2  不是返回0</span><br><span class="line">&#x2F;&#x2F;isaplaha()</span><br><span class="line">&#x2F;&#x2F;isalnum() 判断字母或者数字</span><br><span class="line">&#x2F;&#x2F;isblank() 判断参数是否为空格字符</span><br><span class="line">&#x2F;&#x2F;iscntrl() 判断是否为控制符</span><br><span class="line">&#x2F;&#x2F;isdiggit() 判断是否为阿拉伯数字</span><br><span class="line">&#x2F;&#x2F;isgraph() 判断除了空格符外可打印的所有字符</span><br><span class="line">&#x2F;&#x2F;isprint() 判断是否为可打印的字符</span><br></pre></td></tr></table></figure>
+<h3 id="逻辑运算符"><a href="#逻辑运算符" class="headerlink" title="逻辑运算符"></a>逻辑运算符</h3><p>//&amp;&amp; || ！ 与 或 非</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int a &#x3D;3;</span><br><span class="line">int b &#x3D;5;</span><br><span class="line">if(a&#x3D;&#x3D; 3 &amp;&amp; b &#x3D;&#x3D;5)&#123;</span><br><span class="line">    printf(&quot;dui&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>//?:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">int a &#x3D;1;</span><br><span class="line">int b&#x3D;2;</span><br><span class="line">int c;</span><br><span class="line">c &#x3D; (表达式)?7:5;&#x2F;&#x2F;表达式为true 则c的值为问好后面的，为假则为冒号后面的值；</span><br></pre></td></tr></table></figure>
+<p>//continue 跳出循环</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">if(a &#x3D;&#x3D; 3)&#123;</span><br><span class="line">    continue; &#x2F;&#x2F;当条件符合时，continue就跳转本次循环执行下一次的</span><br><span class="line">    break；&#x2F;&#x2F;当条件符合时退出循环</span><br><span class="line">&#125;</span><br><span class="line">printf();</span><br></pre></td></tr></table></figure>
+<p>//switch</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">int flag &#x3D;5;</span><br><span class="line">switch(flag)&#123;</span><br><span class="line">    case 1;</span><br><span class="line">        printf(&quot;1&quot;);</span><br><span class="line">        break;</span><br><span class="line">    case 2;</span><br><span class="line">        printf(&quot;2&quot;);</span><br><span class="line">        break;</span><br><span class="line">    case 3;</span><br><span class="line">        printf(&quot;3&quot;);</span><br><span class="line">        break;</span><br><span class="line">    case 4;</span><br><span class="line">        printf(&quot;4&quot;);</span><br><span class="line">        break;</span><br><span class="line">    case 5;</span><br><span class="line">        printf(&quot;5&quot;);</span><br><span class="line">        break;</span><br><span class="line">    default: &#x2F;&#x2F;如果参数都没有匹配到case则进入default</span><br><span class="line">        printf(&quot;default&quot;);</span><br><span class="line">        break;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<hr>
+<h3 id="goto"><a href="#goto" class="headerlink" title="goto"></a>goto</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">loop:</span><br><span class="line">printf(&quot;1\n&quot;);</span><br><span class="line">printf(&quot;1\n&quot;);</span><br><span class="line">goto loop; &#x2F;&#x2F;直接去到loop处再执行 可跳过代码 重放代码</span><br><span class="line">printf(&quot;1\n&quot;);</span><br><span class="line">printf(&quot;1\n&quot;);</span><br><span class="line">printf(&quot;1\n&quot;);</span><br></pre></td></tr></table></figure>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title='0' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                        
+                            <li title='1' data-url='http://link.hhtjim.com/163/425570952.mp3'></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+    <div id='gitalk-container' class="comment link"
+		data-enable='false'
+        data-ae='false'
+        data-ci=''
+        data-cs=''
+        data-r=''
+        data-o=''
+        data-a=''
+        data-d='false'
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>
